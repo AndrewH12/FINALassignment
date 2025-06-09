@@ -47,7 +47,7 @@ public class Person {
     }
     public void displayInfo(PApplet p){
         app.fill(0);
-        app.text("Name:"+ name, x,y-50);
-        app.text("Health:"+ health, x,y-30);
+        app.text("Name: "+ name, x,y-50);
+        app.text("Health: "+ health, x,y-30);
     }    
 }
