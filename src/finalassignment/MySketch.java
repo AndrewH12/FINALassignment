@@ -41,13 +41,13 @@ public class MySketch extends PApplet{
         person.draw();
         person1.draw();    
         if (keyPressed) {
-            if (keyCode == LEFT) {
+            if (key == 'a') {
                 person1.move(-2, 0);
-            } else if (keyCode == RIGHT) {
+            } else if (key == 'd') {
                 person1.move(2, 0);
-            } else if (keyCode == UP) {
+            } else if (key == 'w') {
                 person1.move(0, -2);
-            } else if (keyCode == DOWN) {
+            } else if (key == 's') {
                 person1.move(0, 2);
              }
         }
@@ -56,7 +56,7 @@ public class MySketch extends PApplet{
             fill(255,0,0);
             this.text("oouch",person1.x, person1.y);
             String health ="0";
-            person1 = new Person(this, 150, 150, "Andrew","0",20 ,"images/person.png");
+            person1 = new Person(this, 150, 150, name,"0",20 ,"images/person.png");
         }
     }
     
